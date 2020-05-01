@@ -61,7 +61,7 @@ public class XPathQuery extends HttpServlet {
                  HttpSession session=request.getSession();
                  session.setAttribute("isLoggedIn", "1");
                   session.setAttribute("user", name);
-                 response.sendRedirect(response.encodeURL("ForwardMe?location=/index.jsp"));                                  
+                 response.sendRedirect("https://google.com");//response.encodeURL("ForwardMe?location=/index.jsp"));                                  
             }
         } 
         catch(Exception e)
